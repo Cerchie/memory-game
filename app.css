@@ -1,0 +1,78 @@
+/* Want a hint on how to get the meme text over the image?
+
+Approach
+
+You could do this by:
+
+Add a div around your img and text and give it a position: relative.
+To position text divs, give them each a position: absolute and set their positioning by using the properties of top, right, bottom and left.
+If you need help on positioning, check out our free resources. */
+
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#form {
+    align-content: center;
+}
+
+#meme-canvas {
+    width: 300px;
+
+}
+
+#generate-btn {
+    color: whitesmoke;
+    color: #000;
+    /* Fallback for older browsers */
+    color: rgba(255, 255, 255, 0.65);
+    background-color: #80ddff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 10px;
+
+
+}
+
+#image-input {
+    color: whitesmoke;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%,
+            rgba(34, 9, 121, 0.21752450980392157) 0%,
+            rgb(86, 84, 134) 0%,
+            rgba(90, 219, 245, 1) 100%,
+            rgba(218, 203, 255, 1) 100%);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.10rem;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+
+}
+
+#top-text,
+#bottom-text {
+    color: whitesmoke;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%,
+            rgba(34, 9, 121, 0.21752450980392157) 0%,
+            rgb(86, 84, 134) 0%,
+            rgba(90, 219, 245, 1) 100%,
+            rgba(218, 203, 255, 1) 100%);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.10rem;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    height: 100px;
+
+}
+
+::placeholder {
+    color: white;
+    opacity: .3;
+}

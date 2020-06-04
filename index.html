@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>EZ MEMES</title>
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form>
+        <p><textarea id="top-text" placeholder="enter top text here"></textarea></p>
+        <p><input type="file" id="image-input" accept="image/*" placeholder="choose image"> </p>
+        <p><textarea id="bottom-text" placeholder="enter bottom text here"></textarea></p>
+
+        <p> <input type="submit" id="generate-btn">Generate!</button></p>
+        <p><canvas id="meme-canvas"></canvas>
+        </p>
+    </form>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
+<!-- 
+The standard way to handle a form submit is to include 
+an input in the form with a type attribute of “submit”. 
+In JavaScript, you should then listen for “submit” events on the 
+form element rather than click events on the button. Form submits are 
+triggered not only by clicking on the submit button, but also by hitting 
+“enter” when you’re inside the form.
+
+After submission, if you see the page refresh, it’s because
+ this is the default behavior of HTML forms! To stop the page
+  from refreshing, you need to call e.preventDefault() on the event object e. 
+  To learn more about the event object, check out our free resources: 
+  Introduction to Events and Events Continued.  -->
